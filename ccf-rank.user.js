@@ -28,7 +28,6 @@
 // @require     https://raw.githubusercontent.com/yudshj/CCFrank4dblp-UserScript/refs/heads/master/data/ccfRankUrl.js
 // @require     https://raw.githubusercontent.com/yudshj/CCFrank4dblp-UserScript/refs/heads/master/data/ccfFullUrl.js
 // @require     https://raw.githubusercontent.com/yudshj/CCFrank4dblp-UserScript/refs/heads/master/data/ccfAbbrFull.js
-// @require     https://raw.githubusercontent.com/yudshj/CCFrank4dblp-UserScript/refs/heads/master/script.js
 // ==/UserScript==
 
 // 将CSS直接添加到脚本中
