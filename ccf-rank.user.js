@@ -28,6 +28,7 @@
 // @require     https://raw.githubusercontent.com/yudshj/CCFrank4dblp-UserScript/refs/heads/master/data/ccfRankUrl.js
 // @require     https://raw.githubusercontent.com/yudshj/CCFrank4dblp-UserScript/refs/heads/master/data/ccfFullUrl.js
 // @require     https://raw.githubusercontent.com/yudshj/CCFrank4dblp-UserScript/refs/heads/master/data/ccfAbbrFull.js
+// @require     https://raw.githubusercontent.com/yudshj/CCFrank4dblp-UserScript/refs/heads/master/script.js
 // ==/UserScript==
 
 // 将CSS直接添加到脚本中
@@ -84,25 +85,25 @@ GM_addStyle(`
 }
   `);
 
-// Tampermonkey主体代码部分
+// // Tampermonkey主体代码部分
 
-(function () {
-    'use strict';
-    dblp.rankSpanList.push(ccf.getRankSpan);
-    scholar.rankSpanList.push(ccf.getRankSpan);
-    connectedpapers.rankSpanList.push(ccf.getRankSpan);
-    semanticscholar.rankSpanList.push(ccf.getRankSpan);
-    wos.rankSpanList.push(ccf.getRankSpan);
+// (function () {
+//     'use strict';
+//     dblp.rankSpanList.push(ccf.getRankSpan);
+//     scholar.rankSpanList.push(ccf.getRankSpan);
+//     connectedpapers.rankSpanList.push(ccf.getRankSpan);
+//     semanticscholar.rankSpanList.push(ccf.getRankSpan);
+//     wos.rankSpanList.push(ccf.getRankSpan);
 
-    if (window.location.hostname.startsWith("dblp")) {
-        dblp.run();
-    } else if (window.location.hostname.startsWith("scholar.google")) {
-        scholar.run();
-    } else if (window.location.hostname.includes("connectedpaper")) {
-        connectedpapers.run();
-    } else if (window.location.hostname.includes("semanticscholar")) {
-        semanticscholar.run();
-    } else if (window.location.hostname.includes("webofscience")) {
-        wos.run();
-    }
-})();
+//     if (window.location.hostname.startsWith("dblp")) {
+//         dblp.run();
+//     } else if (window.location.hostname.startsWith("scholar.google")) {
+//         scholar.run();
+//     } else if (window.location.hostname.includes("connectedpaper")) {
+//         connectedpapers.run();
+//     } else if (window.location.hostname.includes("semanticscholar")) {
+//         semanticscholar.run();
+//     } else if (window.location.hostname.includes("webofscience")) {
+//         wos.run();
+//     }
+// })();
